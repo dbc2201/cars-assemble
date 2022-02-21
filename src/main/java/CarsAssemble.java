@@ -19,6 +19,6 @@ public class CarsAssemble {
     }
 
     public int workingItemsPerMinute(int speed) {
-        throw new UnsupportedOperationException("Please implement the AssemblyLine.workingItemsPerMinute() method");
+        return Double.valueOf(productionRatePerHour(speed) / 60.0).intValue();
     }
 }
