@@ -1,5 +1,7 @@
 public class CarsAssemble {
 
+    private static final int CARS_PRODUCED_EACH_HOUR = 221;
+
     private double getSuccessRate(int speed) {
         if (speed >= 1 && speed <= 4) {
             return 1.0;
