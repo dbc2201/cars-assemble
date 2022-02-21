@@ -11,11 +11,11 @@ public class CarsAssemble {
             return 0.8;
         } else if (speed == 10) {
             return 0.77;
-        } else return Integer.MIN_VALUE;
+        } else return 0.0;
     }
 
     public double productionRatePerHour(int speed) {
-        throw new UnsupportedOperationException("Please implement the AssemblyLine.productionRateperHour() method");
+        return CARS_PRODUCED_EACH_HOUR * speed * getSuccessRate(speed);
     }
 
     public int workingItemsPerMinute(int speed) {
